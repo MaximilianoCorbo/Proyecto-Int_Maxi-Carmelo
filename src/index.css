@@ -65,3 +65,11 @@
   color #EFEFEF
   color #FFFFFF;
 }
+
+
+.grass {
+--type-color: green;
+}
+.fire {
+  --type-color: red;
+}
