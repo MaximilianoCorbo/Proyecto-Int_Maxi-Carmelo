@@ -22,6 +22,8 @@ const PokemonCard = ({name, url})=> {
         data ? (<section className={data.types[0].type.name}>
             <div className="top-section">
                 <h1>{data.name}</h1>
+                <h2>{data.id}</h2>
+                <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${data.id}.svg`} alt="" />
             </div>
             <div className="bottom-section">
                 <h2>{data.name}</h2>
