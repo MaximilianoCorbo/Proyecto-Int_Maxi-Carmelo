@@ -1,69 +1,67 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: "Poppins" , sans-serif;
+  
+  color-scheme: Primary
+  color #dc0a2d;
+  
+  color-scheme: Bug
+  color #A7B723;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color-scheme: Dark
+  color #75574C;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+  color-scheme: Dragon
+  color #7037FF;
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+  color-scheme: Electric
+  color #F9CF30;
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+  color-scheme: Fairy
+  color #E69EAC;
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+  color-scheme: Fighting
+  color #C12239;
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+  color-scheme: Fire
+  color #F57D31;
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+  color-scheme: Flying
+  color #A891EC;
+
+  color-scheme: Ghost
+  color #70559B;
+
+  color-scheme: Normal
+  color #AAA67F;
+
+  color-scheme: Grass
+  color #74CB48;
+
+  color-scheme: Ground
+  color #DEC16B;
+
+  color-scheme: Ice
+  color #9AD6DF;
+
+  color-scheme: Poison
+  color #A43E9E;
+
+  color-scheme: Psychic
+  color #FB5584;
+
+  color-scheme: Rock
+  color #B69E31;
+
+  color-scheme: Steel
+  color #B7B9D0;
+
+  color-scheme: Water
+  color #6493EB;
+
+  color-scheme: Grayscale
+  color #212121
+  color #666666
+  color #E0E0E0
+  color #EFEFEF
+  color #FFFFFF;
 }
