@@ -1,75 +1,44 @@
-:root {
-  font-family: "Poppins" , sans-serif;
-  
-  color-scheme: Primary
-  color #dc0a2d;
-  
-  color-scheme: Bug
-  color #A7B723;
+.Primary {--type-color:: #dc0a2d;}
 
-  color-scheme: Dark
-  color #75574C;
+.bug {--type-color: #A7B723;}
 
-  color-scheme: Dragon
-  color #7037FF;
+.dark {--type-color: #75574C;}
 
-  color-scheme: Electric
-  color #F9CF30;
+.dragon {--type-color: #7037FF;}
 
-  color-scheme: Fairy
-  color #E69EAC;
+.electric {--type-color: #F9CF30;}
 
-  color-scheme: Fighting
-  color #C12239;
+.fairy {--type-color: #E69EAC;}
 
-  color-scheme: Fire
-  color #F57D31;
+.fighting {--type-color: #C12239;}
 
-  color-scheme: Flying
-  color #A891EC;
+.fire {--type-color: #F57D31;}
 
-  color-scheme: Ghost
-  color #70559B;
+.flying {--type-color: #A891EC;}
 
-  color-scheme: Normal
-  color #AAA67F;
+.ghost {--type-color: #70559B;}
 
-  color-scheme: Grass
-  color #74CB48;
+.normal {--type-color: #AAA67F;}
 
-  color-scheme: Ground
-  color #DEC16B;
+.grass {--type-color: #74CB48;}
 
-  color-scheme: Ice
-  color #9AD6DF;
+.ground {--type-color: #DEC16B;}
 
-  color-scheme: Poison
-  color #A43E9E;
+.ice {--type-color: #9AD6DF;}
 
-  color-scheme: Psychic
-  color #FB5584;
+.poison {--type-color: #A43E9E;}
 
-  color-scheme: Rock
-  color #B69E31;
+.psychic {--type-color: #FB5584;}
 
-  color-scheme: Steel
-  color #B7B9D0;
+.rock {--type-color: #B69E31;}
 
-  color-scheme: Water
-  color #6493EB;
+.steel {--type-color: #B7B9D0;}
 
-  color-scheme: Grayscale
-  color #212121
-  color #666666
-  color #E0E0E0
-  color #EFEFEF
-  color #FFFFFF;
-}
+.water {--type-color: #6493EB;}
 
-
-.grass {
---type-color: green;
-}
-.fire {
-  --type-color: red;
-}
+.grayscale {
+--type-color: #212121;
+--type-color: #666666;
+--type-color: #E0E0E0;
+--type-color: #EFEFEF;
+--type-color: #FFFFFF;}
