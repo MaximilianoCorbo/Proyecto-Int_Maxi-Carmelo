@@ -1,16 +1,16 @@
-.top-section{
-    background: var(--type-color);
+.top-section {
+  background: var(--type-color);
 }
 
-.bottom-section h2{
-    color: var(--type-color);
+.bottom-section h2 {
+  color: var(--type-color);
 }
-body{
-    display: flex;
-    flex-direction: wrap;
+body {
+  display: flex;
+  flex-direction: wrap;
 }
 section {
-    display: flex;
-    flex-direction: column;
-    width: 500px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
 }
