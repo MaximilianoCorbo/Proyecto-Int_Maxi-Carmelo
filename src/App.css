@@ -1,0 +1,76 @@
+.Estructura{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dc0a2d;
+    gap: 10PX;
+    padding: 10px;
+}
+
+.BodyWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    background-color: white;
+    border-radius: 20px;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    gap: 1%;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.25) inset;
+}
+
+.buscador{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.buscador .todo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+} 
+
+.buscador .todo div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 700;
+}
+.buscador .todo button{
+ border-radius: 50%;
+ width: 40px;
+ height: 40px;
+ display: flex;
+ justify-content: center;
+ align-self: center;
+ 
+}
+
+.buscador img{
+    width: 30px; 
+    height: 30px;
+    
+} 
+
+.buscador .search{
+    width: 100%;
+}
+
+.buscador .search input{
+    margin: 10px;
+    display: flex;
+    padding: 8px 16px 8px 12px;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    width: 95%;
+    text-align: center;
+    border-radius: 16px;
+    background: var(--grayscale-white, #FFF);
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.25) inset;
+} 
