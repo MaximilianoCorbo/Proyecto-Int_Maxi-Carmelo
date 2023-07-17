@@ -36,9 +36,9 @@
 
 .water {--type-color: #6493EB;}
 
-.grayscale {
---type-color: #212121;
---type-color: #666666;
---type-color: #E0E0E0;
---type-color: #EFEFEF;
---type-color: #FFFFFF;}
+.grayscale-medium {--type-color: #666666};
+.grayscale-light{--type-color: #E0E0E0};
+/* .grayscale-{--type-color: #EFEFEF}; */
+.grayscale-white {--type-color: #FFFFFF};
+.grayscale-wireframe {--type-color: #b8b8b8};
+.grayscale-dark {--type-color: #1d1d1d};

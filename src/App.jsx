@@ -8,20 +8,20 @@ import Sort from './assets/img/svg/sort.svg'
 
 
 function App() {
-  const [pokemons, setPokemons] = useState([])
-  
+  const [pokemons, setPokemons] = useState([]);
+
   useEffect(() => {
     const requestOptions = {
-      method: 'GET',
-      redirect: 'follow'
+      method: "GET",
+      redirect: "follow",
     };
     //Para todos lo pokemons usar en el fetch el link: https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0
     fetch("https://pokeapi.co/api/v2/pokemon/", requestOptions)
-      .then(response => response.json())
-      .then(result => setPokemons(result.results))
-      .catch(error => console.log('error', error));  
-  }, [])
-  
+      .then((response) => response.json())
+      .then((result) => setPokemons(result.results))
+      .catch((error) => console.log("error", error));
+  }, []);
+  console.log(pokemons);
   return (
     <div className='Estructura .Primary'>
 
@@ -53,4 +53,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
