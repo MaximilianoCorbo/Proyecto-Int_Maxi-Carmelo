@@ -32,10 +32,10 @@ function App() {
             <h1>Pokédex</h1>
           </div>
           
-          <button><img src={Sort} alt="" srcset="" /></button>
+          <button><img src={Sort}/></button>
         </div>
         <div className='search'>
-          <img src={Search}/>
+          {/* <img src={Search}/> */}
           <input type="text" placeholder={`Buscar`}/>
         </div>
       </header>
@@ -45,7 +45,7 @@ function App() {
         pokemons.length 
         && 
         pokemons.map((pokemon)=>
-        <PokemonCard name={pokemon.name} url={pokemon.url}/>)
+        <PokemonCard name={pokemon.name} url={pokemon.url} key={pokemon.name}/>)
         }
       </div>
 

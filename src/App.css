@@ -41,6 +41,10 @@
     align-items: center;
     font-weight: 700;
 }
+.buscador .todo div{
+    color: white;
+}
+
 .buscador .todo button{
  border-radius: 50%;
  width: 40px;
