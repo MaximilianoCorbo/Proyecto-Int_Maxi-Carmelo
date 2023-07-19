@@ -7,6 +7,6 @@ import Individual from "./components/individual.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App /> 
-    <Individual />
+    {/* <Individual /> */}
   </React.StrictMode>
 );

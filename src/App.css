@@ -5,20 +5,23 @@
     background-color: #dc0a2d;
     gap: 10PX;
     padding: 10px;
+    min-height: 100vh;
 }
 
 
 .BodyWrapper{
     display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
+    flex-wrap: wrap;   
+    align-content: flex-start;
     background-color: white;
     border-radius: 20px;
     width: 100%;
     justify-content: center;
     padding: 10px;
-    gap: 5px;
+    gap: 12px;
     box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.25) inset;
+    flex: 1;
+
 }
 
 .buscador{
@@ -28,6 +31,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    flex: 0 0 auto;
 }
 
 .buscador .todo{
