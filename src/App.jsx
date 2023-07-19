@@ -4,6 +4,7 @@ import PokemonCard from './components/PokemonCard'
 import Pokeball from './assets/img/svg/pokeballwhite.svg'
 import Search from './assets/img/svg/search.svg'
 import Sort from './assets/img/svg/sort.svg'
+import Individual from './components/individual'
 
 function App() {
   const [pokemons, setPokemons] = useState([])
@@ -33,6 +34,7 @@ function App() {
   const handleSort = () => {
     console.log(sortedPokemons);
     const sorted = [...pokemons] // Creamos una copia de la lista de pokemons ordenados
+
 
     if (sortAscending) {
       sorted.sort((a, b) => a.name.localeCompare(b.name)) // Ordenamos alfabéticamente en orden ascendente
@@ -90,9 +92,10 @@ function App() {
       </header>
       
       <div className='BodyWrapper'>
-        {sortedPokemons.length && sortedPokemons.map((pokemon) => (
+        { !!sortedPokemons.length && sortedPokemons.map((pokemon) => (
           <PokemonCard name={pokemon.name} url={pokemon.url} key={pokemon.name} />
         ))}
+
       </div>
     </div>
   )
