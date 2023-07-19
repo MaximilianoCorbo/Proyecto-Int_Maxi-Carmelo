@@ -9,7 +9,6 @@
 .top-section{
     color: var(--type-color);
     background-color: white;
-    border-radius: 10px 10px 0px 0px;
 }
 .top-section h2{
     position: absolute;
@@ -23,16 +22,15 @@
     color: white;
     font-size: 20px;
     width: 100%;
-    border-radius: 0px 0px 10px 10px;
 }
 
 img{
     box-sizing: border-box;
-    width: 200px;
-    border-radius: 10px 10px 0px 0px;
+    width: 100%;
 }
 
 .seccion{
+    overflow: hidden;
     box-sizing: border-box;
     position: relative;
     width: 300px; 
@@ -42,6 +40,7 @@ img{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    height: fit-content;
     margin-bottom: 5px;
     
 }
@@ -60,11 +59,14 @@ img{
     
     .seccion img{
         box-sizing: border-box;
-        width: 25vw;
+        /* width: 100%; */
     }
     
     .seccion{
-        width: 32%; 
+        /* width: 32%;  */
+        min-width: 108px;
+        max-width: 300px;
+        flex: 1
     }
     
 }

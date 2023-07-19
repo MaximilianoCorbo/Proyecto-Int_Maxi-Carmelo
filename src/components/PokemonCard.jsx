@@ -19,6 +19,7 @@ const PokemonCard = ({url}) => {
       .then((result) => setData(result))
       .catch((error) => console.log("error", error));
   }, []);
+
   return data ? (
     <section
       className={`${data.types[0].type.name} seccion`}
@@ -32,8 +33,6 @@ const PokemonCard = ({url}) => {
           src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`}
           alt=""
         />
-        {/* <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${data.id}.svg`} alt="" />
-                    <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${data.id}.gif`} alt="" /> */}
       </div>
 
       <div className="bottom-section">
