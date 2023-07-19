@@ -1,13 +1,15 @@
 .detalles {
   display: flex;
   min-width: 360px;
-  min-height: 640px;
+  min-height: 100vh;
+
   padding: 4px;
   flex-direction: column;
   align-items: flex-start;
   flex-shrink: 0;
   background: var(--type-color);
   position: relative;
+
 }
 .titulo {
   display: flex;
@@ -91,13 +93,13 @@ header {
 .fichaTipo {
   display: flex;
   flex-direction: column;
-  padding: 2px 8px;
+  padding: 4px 16px;
   align-items: flex-start;
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: var(--type-color);
   color: var(--grayscale-white, #fff);
   font-family: Poppins;
-  font-size: 8px;
+  font-size: 20px;
 }
 .tarjeta {
   display: flex;
@@ -123,7 +125,7 @@ header {
   align-self: center;
 }
 .sobre {
-  color: var(--grayscale-wireframe, #b8b8b8);
+  color: var(--type-color);
   text-align: center;
   font-family: Poppins;
   font-size: 14px;
@@ -227,6 +229,8 @@ header {
   flex: 1 0 0;
 }
 .tipoMovimientos {
+  display: flex;
+  flex-direction: column;
   color: var(--grayscale-dark, #1d1d1d);
   font-family: Poppins;
   font-size: 10px;
@@ -234,24 +238,7 @@ header {
   font-weight: 400;
   line-height: 16px;
 }
-.tipoMovimientos1 {
-  color: var(--grayscale-dark, #1d1d1d);
-  text-align: center;
-  font-family: Poppins;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px;
-}
-.tipoMovimientos2{
-  color: var(--grayscale-dark, #1d1d1d);
-  text-align: center;
-  font-family: Poppins;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px;
-}
+
 .totalMovimientos {
   color: var(--grayscale-medium, #666);
   text-align: center;
@@ -278,10 +265,11 @@ header {
   line-height: 16px;
 }
 .baseEstadisticas {
+  text-align: center;
   width: 312px;
 }
 .base {
-  color: var(--grayscale-wireframe, #b8b8b8);
+  color: var(--type-color);
   text-align: center;
   font-family: Poppins;
   font-size: 14px;
@@ -301,6 +289,7 @@ header {
   padding-right: 0px;
   flex-direction: column;
   align-items: flex-start;
+  
 }
 .nombreValores {
   width: 27px;
@@ -311,6 +300,7 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: 16px;
+  color: var(--type-color);
 }
 .numerosEstadisticas {
   display: flex;
@@ -350,11 +340,12 @@ header {
   border-radius: 4px;
 }
 .contenidoValores {
-  flex: 1 0 0;
+  
   align-self: stretch;
-  background: var(--grayscale-wireframe, #b8b8b8);
+  background: var(--type-color);
 }
 .fondoValores {
+  flex: 1 0 0; 
   height: 4px;
   flex-shrink: 0;
   align-self: stretch;
@@ -369,4 +360,7 @@ header {
   right: 8px;
   top: 8px;
   opacity: 0.10000000149011612;
+}
+.Imagen img{
+  width: 80vw;
 }
