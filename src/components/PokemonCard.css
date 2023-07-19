@@ -57,7 +57,7 @@ img{
         border-radius: 0px 0px 10px 10px;
     }
     
-    img{
+    .seccion img{
         box-sizing: border-box;
         width: 25vw;
     }

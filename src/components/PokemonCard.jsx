@@ -15,7 +15,7 @@ const PokemonCard = ({ name, url }) => {
       .then((result) => setData(result))
       .catch((error) => console.log("error", error));
   }, []);
-  console.log(data);
+  // console.log(data);
 
   return(
     data ? (
