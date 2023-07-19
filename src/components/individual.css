@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: flex-start;
   flex-shrink: 0;
-  background: var(--grayscale-wireframe, #b8b8b8);
+  background: var(--type-color);
   position: relative;
 }
 .titulo {
@@ -94,14 +94,14 @@ header {
   padding: 2px 8px;
   align-items: flex-start;
   border-radius: 10px;
-  background: var(--grayscale-medium, #666);
+  background-color: var(--type-color);
   color: var(--grayscale-white, #fff);
   font-family: Poppins;
   font-size: 8px;
 }
 .tarjeta {
   display: flex;
-  height: 412px;
+  min-height: 412px;
   padding: 56px 20px 20px 20px;
   flex-direction: column;
   align-items: flex-start;
