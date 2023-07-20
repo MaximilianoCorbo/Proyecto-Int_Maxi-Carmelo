@@ -18,7 +18,7 @@ function App() {
       method: 'GET',
       redirect: 'follow'
     };
-    fetch("https://pokeapi.co/api/v2/pokemon?limit=20&offset=0", requestOptions)
+    fetch("https://pokeapi.co/api/v2/pokemon?limit=100&offset=0", requestOptions)
       .then(response => response.json())
       .then(result => {
         setPokemons(result.results)
