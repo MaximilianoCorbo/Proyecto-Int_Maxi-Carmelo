@@ -37,7 +37,8 @@ const Individual = () => {
       });
     };
     getPokemon();
-  }, []);
+  }, [id]);
+
 
   return (
     <div className={`${data?.types[0].type.name} detalles`}>
@@ -54,12 +55,7 @@ const Individual = () => {
         <Link to={`/pokemons/${parseInt(id) - 1}`} className="anterior" >
           <img src={anterior} alt="" />
         </Link>
-        
-        <Link to={`/pokemons/${parseInt(id) + 1}`} className="posterior" >
-          <img src={posterior} alt="" />
-        </Link>
-      </header>
-      <div className="Imagen">
+        <div className="Imagen">
           {
             <img
               src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data?.id}.png`}
@@ -67,6 +63,11 @@ const Individual = () => {
             />
           }
         </div>
+        <Link to={`/pokemons/${parseInt(id) + 1}`} className="posterior" >
+          <img src={posterior} alt="" />
+        </Link>
+      </header>
+      
       <div className="tarjeta">
         <div className="fichas">
           {data?.types.map((type) => (
@@ -144,7 +145,7 @@ const Individual = () => {
               <div className="marcaValores">
                 <div
                   className="contenidoValores"
-                  style={{ width: `${data?.stats[0].base_stat}%` }}
+                  style={{ width: `${data?.stats[0].base_stat/2}%` }}
                 ></div>
                 <div className="fondoValores"></div>
               </div>
@@ -154,7 +155,7 @@ const Individual = () => {
               <div className="marcaValores">
                 <div
                   className="contenidoValores"
-                  style={{ width: `${data?.stats[1].base_stat}%` }}
+                  style={{ width: `${data?.stats[1].base_stat/2}%` }}
                 ></div>
                 <div className="fondoValores"></div>
               </div>
@@ -164,7 +165,7 @@ const Individual = () => {
               <div className="marcaValores">
                 <div
                   className="contenidoValores"
-                  style={{ width: `${data?.stats[2].base_stat}%` }}
+                  style={{ width: `${data?.stats[2].base_stat/2}%` }}
                 ></div>
                 <div className="fondoValores"></div>
               </div>
@@ -174,7 +175,7 @@ const Individual = () => {
               <div className="marcaValores">
                 <div
                   className="contenidoValores"
-                  style={{ width: `${data?.stats[3].base_stat}%` }}
+                  style={{ width: `${data?.stats[3].base_stat/2}%` }}
                 ></div>
                 <div className="fondoValores"></div>
               </div>
@@ -184,7 +185,7 @@ const Individual = () => {
               <div className="marcaValores">
                 <div
                   className="contenidoValores"
-                  style={{ width: `${data?.stats[4].base_stat}%` }}
+                  style={{ width: `${data?.stats[4].base_stat/2}%` }}
                 ></div>
                 <div className="fondoValores"></div>
               </div>
@@ -194,7 +195,7 @@ const Individual = () => {
               <div className="marcaValores">
                 <div
                   className="contenidoValores"
-                  style={{ width: `${data?.stats[5].base_stat}%` }}
+                  style={{ width: `${data?.stats[5].base_stat/2}%` }}
                 ></div>
                 <div className="fondoValores"></div>
               </div>
