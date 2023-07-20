@@ -34,10 +34,8 @@ function App() {
   const handleSort = () => {
     console.log(sortedPokemons);
     const sorted = [...pokemons] // Creamos una copia de la lista de pokemons ordenados
-
-
     if (sortAscending) {
-      sorted.sort((a, b) => a.name.localeCompare(b.name)) // Ordenamos alfabéticamente en orden ascendente
+    sorted.sort((a, b) => a.name.localeCompare(b.name)) // Ordenamos alfabéticamente en orden ascendente
     } else {
       // sorted.sort((a, b) => b.name.localeCompare(a.name)); // Ordenamos alfabéticamente en orden descendente
       sorted.sort((a, b) => {
@@ -75,8 +73,7 @@ function App() {
 
         </div>
 
-        <div className='search' >
-
+        <div className='search'>
           <button onClick={handleSort}>
             <img src={Search}/> 
           </button>
@@ -86,7 +83,6 @@ function App() {
           value={searchTerm}
           onChange={handleSearch}
           onKeyDown={handleSort}/>
-          
         </div>
 
       </header>

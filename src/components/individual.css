@@ -1,3 +1,7 @@
+*{
+  text-transform: capitalize;
+}
+
 .detalles {
   display: flex;
   min-width: 360px;
@@ -271,6 +275,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
+  text-transform: none;
 }
 .baseEstadisticas {
   text-align: center;
